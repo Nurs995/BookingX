@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Footballs database</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="/bootstrap.min.css" media="screen"/>
+    <style>
+        body{
+            background: gray;
+        }
+        .head{
+            height:250px;
+            width:1250px;
+            background-size: 100%;
+            border-radius: 20px;}
+        footer{
+            position: absolute;
+            background:#a7b1f9;
+            color: #343a40;
+            width: 10%;
+            font-style:italic;
+            text-align:right;
+        }
+        .Burger{
+            height: 350px;
+            width: 200px;
+            float: left;
+            margin-top: 30px;
+            margin-left: 70px;
+            margin-bottom: 50px;
+            background-color: gray;
+            border-radius: 20px;
+            font-family: Times New Roman;
+            color: lightblue;
+            font-weight:bold;
+        }
+
+        .Burger img{
+            height: 210px;
+            width: 180px;
+            margin-top: 20px;
+            margin-left: 10px;
+
+        }
+        .korzina {
+            width: 100%;
+            margin-left: 1220px;
+        }
+    </style>
+</head>
+<body>
+<div class="head" style="margin-left: 20px; ">
+    <div>
+
+        <form th:action="@{/clubs}" method="get" enctype="multipart/form-data">
+            <div style="margin-left: 1230px;">
+                <button class="btn btn-primary">Главная</button>
+            </div>
+        </form>
+    </div>
+        <div class="korzina">
+    <form th:action="@{/Korzina}" method="get" enctype="multipart/form-data">
+        <button class="btn btn-primary" style="margin-top: 20px;">Корзина</button>
+    </form>
+    </div>
+</div>
+<div class="container" >
+    <div class="page-header" id="banner">
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
